@@ -16,17 +16,12 @@ struct ContainerView<Content: View>: View {
     
     var body: some View {
         ZStack {
-            RoundedRectangle(cornerRadius: 70)
+            RoundedRectangle(cornerRadius: 50)
                 .foregroundColor(Color.whiteBackground)
-//            VStack {
-//                Spacer()
-//                Rectangle()
-//                    .frame(height: 25)
-//                    .foregroundColor(Color.lightBackground)
-//            }
+                .edgesIgnoringSafeArea(.bottom)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
             content
         }
-        .ignoresSafeArea(edges: .bottom)
     }
 }
 

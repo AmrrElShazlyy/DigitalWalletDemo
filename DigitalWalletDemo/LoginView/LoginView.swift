@@ -26,7 +26,7 @@ struct LoginView: View {
                 Text("Log In")
                     .font(.system(size: 18, weight: .semibold))
                     .foregroundColor(.black)
-                    .frame(width: 300, height: 50)
+                    .frame(width: 200, height: 50)
                     .background(Color.greenBackground)
                     .cornerRadius(25)
             }
@@ -51,7 +51,7 @@ struct LoginView: View {
             Text("Sign Up")
                 .font(.system(size: 18, weight: .semibold))
                 .foregroundColor(.black)
-                .frame(width: 300, height: 50)
+                .frame(width: 200, height: 50)
                 .background(.lightGreen)
                 .cornerRadius(25)
         }
@@ -166,7 +166,7 @@ struct UserInfoView: View {
                 TextField("username", text: $userName)
                     .font(.system(size: 16))
                     .padding()
-                    .frame(width: 300)
+                    .frame(width: 300, height: 40)
                     .background(Color.lightGreen)
                     .cornerRadius(25)
                     .autocapitalization(.none)
@@ -195,7 +195,7 @@ struct UserInfoView: View {
                     }
                 }
                 .padding()
-                .frame(width: 300)
+                .frame(width: 300, height: 40)
                 .background(Color.lightGreen)
                 .cornerRadius(25)
                 .autocapitalization(.none)
