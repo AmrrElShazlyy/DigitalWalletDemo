@@ -9,6 +9,7 @@ import SwiftUI
 
 struct LoginView: View {
     @ObservedObject var viewModel: LoginViewModel
+    @StateObject private var homeViewModel = HomeViewModel()
     
     var loginButton: some View {
         Button(action: {
@@ -144,7 +145,7 @@ struct LoginView: View {
             Text(viewModel.errorMessage)
         }
         .fullScreenCover(isPresented: $viewModel.isAuthenticated) {
-            HomeView()
+            HomeView(viewModel: homeViewModel)
         }
     }
 }
