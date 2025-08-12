@@ -17,20 +17,12 @@ struct LoginView: View {
                 try await viewModel.login()
             }
         }) {
-            if viewModel.isLoading {
-                ProgressView()
-                    .progressViewStyle(CircularProgressViewStyle(tint: .black))
-                    .frame(width: 300, height: 50)
-                    .background(Color.greenBackground)
-                    .cornerRadius(25)
-            } else {
-                Text("Log In")
-                    .font(.system(size: 18, weight: .semibold))
-                    .foregroundColor(.black)
-                    .frame(width: 200, height: 50)
-                    .background(Color.greenBackground)
-                    .cornerRadius(25)
-            }
+            Text("Log In")
+                .font(.system(size: 18, weight: .semibold))
+                .foregroundColor(.black)
+                .frame(width: 200, height: 50)
+                .background(Color.greenBackground)
+                .cornerRadius(25)
         }
         .disabled(viewModel.username.isEmpty || viewModel.password.isEmpty || viewModel.isLoading)
         .opacity((viewModel.username.isEmpty || viewModel.password.isEmpty) ? 0.3 : 1)
@@ -146,6 +138,14 @@ struct LoginView: View {
         }
         .fullScreenCover(isPresented: $viewModel.isAuthenticated) {
             HomeView(viewModel: homeViewModel)
+        }
+        .overlay(alignment: .center) {
+            if viewModel.isLoading {
+                ProgressView()
+                    .progressViewStyle(CircularProgressViewStyle(tint: .black))
+                    .frame(width: 300, height: 100)
+                    .cornerRadius(25)
+            }
         }
     }
 }
