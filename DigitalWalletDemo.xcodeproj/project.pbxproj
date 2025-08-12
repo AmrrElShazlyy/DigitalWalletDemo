@@ -155,13 +155,13 @@
 		8AFD6B762E489DF700CF6D6B /* DigitalWalletDemo */ = {
 			isa = PBXGroup;
 			children = (
-				8A2B3F502E4BA0AE00CCDCD5 /* BottomTabBar */,
 				8A2B3F3C2E4B90B000CCDCD5 /* Services */,
 				8A3A3CFE2E4B4537009AEB5B /* Extensions */,
 				8A5CFC722E492C92006BACA3 /* Resources */,
 				8AFD6B832E48D86700CF6D6B /* Models */,
 				8AFD6B812E48D84800CF6D6B /* LoginView */,
 				8A5CFC6D2E49299E006BACA3 /* HomeView */,
+				8A2B3F502E4BA0AE00CCDCD5 /* BottomTabBar */,
 				8AFD6B752E489DF700CF6D6B /* DigitalWalletDemoApp.swift */,
 				8AFD6B882E48DA0700CF6D6B /* ContainerView.swift */,
 			);
