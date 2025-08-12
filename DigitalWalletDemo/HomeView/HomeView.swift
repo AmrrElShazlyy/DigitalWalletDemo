@@ -9,13 +9,15 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var viewModel: HomeViewModel
+    @State private var selection: AppTab = .home
     @State private var periodSelection: Period = .monthly
     var expenses: ExpensesData { viewModel.expensesData ?? .placeholder }
 
     var body: some View {
         VStack() {
             header
-                .padding()
+                .padding(.top, 50)
+                .padding(.horizontal, 20)
             IncomeExpenseView(expenses: expenses)
                 .padding()
 
@@ -34,6 +36,10 @@ struct HomeView: View {
             }
         }
         .background(Color.greenBackground)
+        .safeAreaPadding(.top, 20)
+        .safeAreaInset(edge: .bottom) {
+            BottomTabBar(selection: $selection)
+        }
         .task {
             await viewModel.fetchData()
         }

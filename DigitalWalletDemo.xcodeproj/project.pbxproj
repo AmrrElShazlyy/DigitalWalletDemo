@@ -17,6 +17,8 @@
 		8A2B3F482E4B91DC00CCDCD5 /* HorizontalDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B3F472E4B91DC00CCDCD5 /* HorizontalDivider.swift */; };
 		8A2B3F4A2E4B91F900CCDCD5 /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B3F492E4B91F900CCDCD5 /* TransactionRow.swift */; };
 		8A2B3F4C2E4B921700CCDCD5 /* SegmentedTabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B3F4B2E4B921700CCDCD5 /* SegmentedTabs.swift */; };
+		8A2B3F4E2E4B93EA00CCDCD5 /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B3F4D2E4B93EA00CCDCD5 /* AppTab.swift */; };
+		8A2B3F522E4BA0B800CCDCD5 /* BottomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B3F512E4BA0B800CCDCD5 /* BottomTabBar.swift */; };
 		8A3A3CD02E4A8B3B009AEB5B /* expenses.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A3A3CCF2E4A8B3B009AEB5B /* expenses.json */; };
 		8A3A3CD22E4A8B63009AEB5B /* Expenses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A3CD12E4A8B63009AEB5B /* Expenses.swift */; };
 		8A3A3CD42E4A8B93009AEB5B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3A3CD32E4A8B93009AEB5B /* DatabaseManager.swift */; };
@@ -44,6 +46,8 @@
 		8A2B3F472E4B91DC00CCDCD5 /* HorizontalDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalDivider.swift; sourceTree = "<group>"; };
 		8A2B3F492E4B91F900CCDCD5 /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
 		8A2B3F4B2E4B921700CCDCD5 /* SegmentedTabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedTabs.swift; sourceTree = "<group>"; };
+		8A2B3F4D2E4B93EA00CCDCD5 /* AppTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTab.swift; sourceTree = "<group>"; };
+		8A2B3F512E4BA0B800CCDCD5 /* BottomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabBar.swift; sourceTree = "<group>"; };
 		8A3A3CCF2E4A8B3B009AEB5B /* expenses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = expenses.json; sourceTree = "<group>"; };
 		8A3A3CD12E4A8B63009AEB5B /* Expenses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expenses.swift; sourceTree = "<group>"; };
 		8A3A3CD32E4A8B93009AEB5B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -92,6 +96,14 @@
 				8A2B3F3F2E4B916500CCDCD5 /* BalanceView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		8A2B3F502E4BA0AE00CCDCD5 /* BottomTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B3F512E4BA0B800CCDCD5 /* BottomTabBar.swift */,
+			);
+			path = BottomTabBar;
 			sourceTree = "<group>";
 		};
 		8A3A3CFE2E4B4537009AEB5B /* Extensions */ = {
@@ -143,6 +155,7 @@
 		8AFD6B762E489DF700CF6D6B /* DigitalWalletDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8A2B3F502E4BA0AE00CCDCD5 /* BottomTabBar */,
 				8A2B3F3C2E4B90B000CCDCD5 /* Services */,
 				8A3A3CFE2E4B4537009AEB5B /* Extensions */,
 				8A5CFC722E492C92006BACA3 /* Resources */,
@@ -167,6 +180,7 @@
 		8AFD6B832E48D86700CF6D6B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A2B3F4D2E4B93EA00CCDCD5 /* AppTab.swift */,
 				8A2B3F372E4B742400CCDCD5 /* DatabaseError.swift */,
 				8A2B3F352E4B73F800CCDCD5 /* Period.swift */,
 				8AFD6B842E48D86900CF6D6B /* User.swift */,
@@ -254,10 +268,12 @@
 				8A3A3CD62E4A8BBD009AEB5B /* HomeViewModel.swift in Sources */,
 				8AFD6B892E48DA0700CF6D6B /* ContainerView.swift in Sources */,
 				8A3A3D002E4B4538009AEB5B /* ViewExtension.swift in Sources */,
+				8A2B3F4E2E4B93EA00CCDCD5 /* AppTab.swift in Sources */,
 				8A2B3F4A2E4B91F900CCDCD5 /* TransactionRow.swift in Sources */,
 				8A2B3F462E4B91C500CCDCD5 /* InsightRow.swift in Sources */,
 				8AFD6B852E48D86900CF6D6B /* User.swift in Sources */,
 				8A2B3F422E4B918E00CCDCD5 /* ProgressBar.swift in Sources */,
+				8A2B3F522E4BA0B800CCDCD5 /* BottomTabBar.swift in Sources */,
 				8A2B3F402E4B916500CCDCD5 /* BalanceView.swift in Sources */,
 				8A5CFC6E2E49299E006BACA3 /* HomeView.swift in Sources */,
 				8A2B3F382E4B742400CCDCD5 /* DatabaseError.swift in Sources */,
